@@ -1,7 +1,7 @@
 # AI Automation Platform: Templates, Websites and Content Engine
 
 ## 🚀 Overview
-Four months of hands-on work (July to November 2026) for a US AI automation and content platform used by small businesses and agencies. I built installable automation templates, the platform's marketing website and sales pages, a nightly SEO article engine that publishes to two company blogs, a design-skills library for the platform's AI site builder, and product videos made entirely in code.
+Ongoing hands-on client work for a US AI automation and content platform used by small businesses and agencies. I build installable automation templates, the platform's marketing website and sales pages, a nightly SEO article engine that publishes to two company blogs, a design-skills library for the platform's AI site builder, and product videos made entirely in code.
 
 > **Note:** This was a client project, so the code, prompts and account details are private. This README describes what I built and how it works, with links to the live work.
 
