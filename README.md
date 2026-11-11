@@ -1,7 +1,7 @@
 # AI Automation Platform: Templates, Websites and Content Engine
 
 ## 🚀 Overview
-Ongoing hands-on client work for a US AI automation and content platform used by small businesses and agencies. I build installable automation templates, the platform's marketing website and sales pages, a nightly SEO article engine that publishes to two company blogs, a design-skills library for the platform's AI site builder, and product videos made entirely in code.
+Ongoing hands-on client work for a US AI automation and content platform used by small businesses and agencies. I build installable automation templates, the platform's marketing website and sales pages, a nightly SEO article engine that publishes to two company blogs, a design-skills library for the platform's AI site builder, and product videos and founder reels made in code.
 
 > **Note:** This was a client project, so the code, prompts and account details are private. This README describes what I built and how it works, with links to the live work.
 
@@ -29,6 +29,7 @@ flowchart LR
     W --> W1[Marketing site, sales pages, pricing pages]
     B --> B1[2 blogs, 4 articles a night]
     S --> S1[58 design skills + QA tooling]
+    V --> V1[Launch videos + founder reels]
 ```
 
 ### 1. Automation Templates for Small Businesses
@@ -69,9 +70,13 @@ flowchart LR
 - Every block carries its own colour variables and fallback CSS, so it renders the same with or without the site's Tailwind setup.
 - Rewrote the site builder's system prompts so it picks skills by page section and follows them once loaded.
 
-### 5. Product Videos and Motion Graphics
-- Short product videos for the client, made entirely in code from real captures of the live app: HTML frames rendered with Playwright and assembled with ffmpeg, AI voice-over and music by API, 3D scenes in three.js.
-- Lightweight animated backgrounds for the platform's workflow canvas in pure HTML, CSS and SVG, animating only transform and opacity, with reduced-motion support.
+### 5. Product Videos and Founder Reels
+Short videos for the client, made entirely in code from real captures of the live app: HTML frames rendered with Playwright and assembled with ffmpeg, AI voice-over and music by API, 3D scenes in three.js.
+- **Launch videos:** six product videos in 16:9 and 9:16, from a one-sentence landing page to a full week of work in the app, with real app screens in 3D windows and sound levelled to -16 LUFS.
+- **Founder reels:** vertical reels where the client's founder presents one feature in his own cloned voice while the product plays around him. Built from one photo and a short voice recording, so he did not have to film anything.
+- **Formats taken from reference reels:** graphics on top with the founder below (60/40), and the founder full screen with real product pieces floating in front of him. Each feature got its own layout.
+- **A second visual pass on the same footage:** two new themes (paper and tangerine, and a "sunset glass" look with a 3D carousel of real slides), re-edited with no new avatar spend.
+- **Animated canvas backgrounds** for the workflow builder in pure HTML, CSS and SVG, animating only transform and opacity, with reduced-motion support.
 
 ## 🔗 Live Work
 | What | Link |
@@ -91,7 +96,7 @@ Live pages may have been edited by the client's team since I handed them over.
 - **Automation:** visual workflow builder, Stripe API, Twilio API, Google Sheets, Google Calendar, Slack
 - **Web:** Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, Vercel, an AI site builder
 - **Content engine:** Node.js, GitHub Actions, OpenAI API, image-generation API, Cloudinary, keyword data APIs
-- **Video and visuals:** Playwright, ffmpeg, three.js, ElevenLabs API, HTML/CSS/SVG
+- **Video and visuals:** Playwright, ffmpeg, three.js, ElevenLabs API, HeyGen API (avatar, voice clone, lip sync), HTML/CSS/SVG
 - **Testing:** Playwright browser tests at desktop and phone widths, Python and Node check scripts
 
 ## ⚙️ How I Work
@@ -114,6 +119,9 @@ Live pages may have been edited by the client's team since I handed them over.
 - **Invisible colours:** generated sites define their own colour names, so assumed theme colours painted nothing. Each skill block now declares its own colours and renders identically with or without Tailwind.
 - **Blocked deploys:** deploys were silently blocked for hours because the host only accepted commits from the project owner. Found it and fixed the commit identity.
 - **Slow images:** cut the site's image payload from 10.7 MB to 1.9 MB and fixed images that never loaded on a cold edge.
+- **Brand name said wrong:** the cloned voice mispronounced the brand and the speech API takes no pronunciation tags, so I recorded four respellings of the name and kept the one that sounded right in the script.
+- **Over-acted lip sync:** the avatar opened its mouth too wide. I switched to a calm, closed-mouth photo with low expressiveness, then re-lip-synced only the three lines that still looked off, on a softer copy of the voice. The joins do not show.
+- **Grimace on the first word:** every avatar render pulled a face on its first words, so each voice track starts with half a second of silence hidden under the opening graphic.
 
 ## 📊 By the Numbers
 - 58 site-builder skills delivered
@@ -122,3 +130,4 @@ Live pages may have been edited by the client's team since I handed them over.
 - 13,200 keywords screened down to 101
 - 9 pages built inside an AI site builder
 - 20 platform behaviours documented with fixes
+- 4 founder reels in 2 formats and 2 visual themes, under $1 of avatar credit each
