@@ -1,12 +1,12 @@
 # AI Automation Platform: Templates, Websites and Content Engine
 
 ## 🚀 Overview
-Ongoing hands-on client work for a US AI automation and content platform used by small businesses and agencies. I build installable automation templates, the platform's marketing website and sales pages, a nightly SEO article engine that publishes to two company blogs, a design-skills library for the platform's AI site builder, and product videos and founder reels made in code.
+Ongoing hands-on client work for IdeoLab, a US AI automation and content platform used by small businesses and agencies. I build installable automation templates, the platform's marketing website and sales pages, a nightly SEO article engine that publishes to two company blogs, a design-skills library for the platform's AI site builder, and product videos and founder reels made in code.
 
 > **Note:** This was a client project, so the code, prompts and account details are private. This README describes what I built and how it works, with links to the live work.
 
 ## 🧩 About the Platform
-The client is an all-in-one AI platform for small businesses and marketing agencies. A business sets up its profile once (brand voice, style guide, products and references), and the platform's AI uses it in everything it creates. It brings together:
+IdeoLab is an all-in-one AI platform for small businesses and marketing agencies. A business sets up its profile once (brand voice, style guide, products and references), and the platform's AI uses it in everything it creates. It brings together:
 - **AI assistants that know the business:** chat with AI that remembers the business's details, and share it as a web app or a website chat widget.
 - **AI creation studio:** presentations, mind maps, images, infographics, documents, social posts, AI product photo shoots and AI video.
 - **AI site builder:** landing pages, full websites and blogs, built and edited by chatting with the AI.
@@ -42,7 +42,7 @@ Installable templates a non-technical owner can copy, connect and run in about t
 
 ### 2. Websites and Sales Pages
 - **Platform marketing website:** a multi-section site in Next.js with structured data, Open Graph and a sitemap, interactive sections (a before/after slider, an animated three-step explainer, hover tooltips) and many client feedback rounds, each verified on the live deploy.
-- **Pages built inside the platform's own AI site builder** (by prompting it section by section, so the client can keep editing them): a launch-offer sales page, an online workshop sales page with a one-click upsell page, a service site with a booking pop-up plus a regional version, a full website rebuild, and three pricing pages.
+- **Pages built inside IdeoLab Sites, the platform's own AI site builder** (by prompting it section by section, so the client can keep editing them): a launch-offer sales page, an online workshop sales page with a one-click upsell page, a service site with a booking pop-up plus a regional version, a full website rebuild, and three pricing pages.
 - **Pricing pages:** comparison tables built from the client's plan spreadsheet, with 23 feature rows and a detailed tooltip on every feature. Reworked after review into three stacked comparison tables, tested in a real browser on desktop and phone.
 
 ### 3. Nightly SEO Article Engine
